@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
 const Profile = ({pro,handlName}) => {
     console.log(pro)
@@ -16,8 +16,11 @@ const Profile = ({pro,handlName}) => {
   );
 };
 
+Profile.propTypes={
+pro:PropTypes.bool
+};
 
-// Example.defaultProps ={
-//   pro:'hello'
-// };
+Profile.defaultProps ={
+  pro:'hello'
+ }
 export default Profile
